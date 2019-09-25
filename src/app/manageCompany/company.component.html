@@ -1,0 +1,25 @@
+<div style="padding:10px;">
+    <input type="text"  [(ngModal)]="model.Fname"/>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" [(ngModal)]="model.Lname"/>
+    <br>
+    Email:<br>
+    <input type="text"  [(ngModal)]="model.Email"/>
+    <br>
+    Company Name:<br>
+    <input type="text"  [(ngModal)]="model.CompanyName"/>
+    <br>
+    
+    Licence Start:<br>
+    <input type="text"  placeholder="__/__/____" [(ngModal)]="model.LicenseStart"/>
+
+    <br>
+  
+    Licence End:<br>
+    <input type="text"  placeholder="__/__/____" [(ngModal)]="model.LicenseEnd"/>
+    <br>
+
+    <br>
+    <button (onClick)="addCompany()" >Add</button>
+</div> 

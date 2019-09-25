@@ -1,0 +1,20 @@
+<table id="company">
+    <tr>
+      <th>Company</th>
+      <th>Email</th>
+      <th>Licance Start</th>
+      <th>Licance End</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let item of companyList">
+      <td>{{item.CompanyName}}</td>
+      <td>{{item.Email}}</td>
+      <td>{{item.LicenseStart}}</td>
+      <td>{{item.LicenseEnd}}</td>
+      <td><a [routerLink]="['/addCompany']" >Edit</a>
+     <a href="#" (onclick)="changeActivation(item.id,!item.isActivate)">Decativate</a></td>
+    </tr>
+   
+  </table>
+
+  <a [routerLink]="['/addCompany']">Add Company</a>
